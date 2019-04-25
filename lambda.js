@@ -46,7 +46,7 @@ const handlers = {
 					try {
 						var json = JSON.parse(body.toString());
 						//try to extract message from json
-						speechOutput = json.extract;
+						speechOutput = json.description;
 					} catch (e) {
 						console.log("Error on parse",e,body.toString());
 						speechOutput ="Error on Parse";
